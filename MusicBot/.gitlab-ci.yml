@@ -1,0 +1,27 @@
+```yaml
+image: node:18-alpine
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+test:
+  stage: test
+  script:
+    - npm run test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deployment script goes here"
+  only:
+    - master
+
+```
