@@ -1,0 +1,7 @@
+```
+# Ignore build context files
+node_modules
+.git
+.env
+.env.local
+```
